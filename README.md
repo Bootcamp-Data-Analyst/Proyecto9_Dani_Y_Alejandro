@@ -9,6 +9,14 @@ El primer paso crítico es evaluar la viabilidad del aprendizaje supervisado med
 •	Estado del Dataset: Se observa un equilibrio casi óptimo, con una distribución de 51.8% (comestibles) frente a 48.2% (venenosas).
 •	Implicación Técnica: Al no existir un sesgo significativo, no se requieren técnicas de remuestreo como SMOTE ni ajustes en la función de pérdida del modelo. Los algoritmos podrán aprender las características de ambas clases con la misma prioridad.
 
+(¿Qué es SMOTE?
+SMOTE (Synthetic Minority Over-sampling Technique) es una técnica que se usa cuando tienes un dataset muy "cojo" o desbalanceado.
+Imagina que quieres entrenar una IA para detectar incendios:
+•	Tienes 1,000 fotos de bosques normales.
+•	Solo tienes 10 fotos de bosques quemándose.
+Si entrenas al modelo así, la IA se volverá "perezosa" y dirá que nunca hay fuego, porque acertará el 99% de las veces por pura estadística. SMOTE soluciona esto creando datos falsos (sintéticos) de la clase minoritaria (el fuego) basándose en los que ya existen para igualar las cantidades.)
+
+
 <img width="721" height="513" alt="image" src="https://github.com/user-attachments/assets/7477ea33-9689-46b5-8e29-b3010b2aed7e" />
 
 
